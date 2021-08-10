@@ -1,5 +1,5 @@
 # ..:: TAPESH SHELL v1.0 ::.. 
-#Coded By : Sorna - Parsa Alpha 
+#Coded By : Sorna - Parsa Alpha | TAPESH DIGITAL SECURITY TEAM IRAN
 
 
 ![alt text](https://github.com/TAPESH-TEAM/TAPESH-SHELL-v1.0/blob/main/photo_2021-08-11_02-21-53.jpg)

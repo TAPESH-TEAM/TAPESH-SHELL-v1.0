@@ -6,4 +6,4 @@
 
 Default Password : 1234<br/>
 CHANNEL : T.ME/ICTUS_TM<br/>
-#TAPESH SHELL For Ever !
+#TAPESH SHELL FOR EVER !

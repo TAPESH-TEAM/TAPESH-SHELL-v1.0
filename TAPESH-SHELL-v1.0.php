@@ -613,27 +613,7 @@ else
                 <input type="hidden" name="not" value="1">
                 <button name="action" class="c-btn" value="About">About Us</button>
             </form>
-        </li>
-        <li class="c-li_item">
-            <form method="post">
-                <input type="hidden" name="not" value="1">
-                <button name="action" class="c-btn" value="Setting">Setting</button>
-            </form>
-        </li>
-        <?php
-            if(isset($_COOKIE['Tapeshlog']) || isset($_COOKIE['TapeshPassword']))
-            {
-                echo " <form method=\"post\">
-                <input type=\"hidden\" name=\"not\" value=\"1\">
-                <button name=\"Out\" class=\"c-btn\" value=\"Log\" style='border-color: red;color: red'>Log Out</button>
-            </form>";
-                if(isset($_POST['Out']))
-                {
-                    setcookie('Tapeshlog','false');
-                    @header('location: '.$_SERVER["PHP_SELF"]);
-                }
-            }
-        ?>
+       </li>
     </ul>
 </div>
 
